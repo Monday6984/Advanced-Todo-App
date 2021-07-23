@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+    <div class="top-image"></div>
+    <main>
+        <div class="header">
+            <h1>TODO</h1>
+            <div onclick="changeTheme()" class="toggle-btn"></div>
+        </div>
+
+        <div class="todo-section">
+            <div class="circle"></div> 
+            <input type="text" name="" id="todo-input">
+        </div>
+
+        <div class="todos">
+
+        </div>
+        <div class="remarks">
+          <div class="completedCount"></div>
+          <div onclick="clearCompleted()">Clear Completed</div>
+          <div class="filters">
+            <div class="filterActive" onclick="showAll()">All</div>
+            <div onclick="filterActive()">Active</div>
+            <div onclick="filterCompleted()">Completed</div>
+          </div>
+        </div>
+    </main>
+
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Monday Ofem</a>.
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
